@@ -6,9 +6,9 @@ const Stack = createStackNavigator();
 
 export const StackNavigator = () => {
   return (
-    <Stack.Navigator>
-      <Stack.Screen name="Pantalla1" component={Pantalla1} />
-      <Stack.Screen name="Pantalla2" component={Pantalla2} />
+    <Stack.Navigator >
+      <Stack.Screen name="Pantalla1" options={{headerShown:false}} component={Pantalla1} />
+      <Stack.Screen name="Pantalla2" options={{headerShown:false}} component={Pantalla2} />
     </Stack.Navigator>
   );
 }

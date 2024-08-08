@@ -1,5 +1,6 @@
 import React from 'react';
 import { TextInput, StyleSheet, TextInputProps } from 'react-native';
+import { styles } from '../../theme/appTheme';
 
 interface ReusableTextInputProps extends TextInputProps {
   placeholder: string;
@@ -20,15 +21,5 @@ export const ReusableTextInput: React.FC<ReusableTextInputProps> = ({ placeholde
   );
 };
 
-const styles = StyleSheet.create({
-  input: {
-    height: 40,
-    borderColor: 'gray',
-    borderWidth: 1,
-    marginBottom: 10,
-    paddingHorizontal: 10,
-    backgroundColor: 'white',
-  },
-});
 
 export default ReusableTextInput;

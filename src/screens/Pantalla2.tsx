@@ -35,30 +35,12 @@ export const Pantalla2: React.FC = () => {
         value={number2}
         onChangeText={setNumber2}
       />
-      <TouchableOpacity style={localStyles.button} onPress={handleDivide}>
-        <Text style={localStyles.buttonText}>Dividir</Text>
+      <TouchableOpacity style={styles.button} onPress={handleDivide}>
+        <Text style={styles.buttonText}>Dividir</Text>
       </TouchableOpacity>
-      {result && <Text style={localStyles.result}>{result}</Text>}
+      {result && <Text style={styles.result}>{result}</Text>}
     </View>
   );
 };
-
-const localStyles = StyleSheet.create({
-  button: {
-    backgroundColor: 'blue',
-    padding: 10,
-    alignItems: 'center',
-    marginVertical: 10,
-  },
-  buttonText: {
-    color: 'white',
-    fontSize: 16,
-  },
-  result: {
-    marginTop: 20,
-    fontSize: 18,
-    color: 'white',
-  },
-});
 
 export default Pantalla2;
